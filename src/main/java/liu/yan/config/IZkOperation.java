@@ -37,4 +37,6 @@ public interface IZkOperation {
     public void deleteNode(CuratorFramework client, String path, boolean force) throws Exception;
 
     public void deleteRecursive(CuratorFramework client, String path) throws Exception;
+
+    public void close(CuratorFramework client) throws Exception;
 }

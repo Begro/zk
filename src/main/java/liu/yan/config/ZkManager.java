@@ -136,4 +136,9 @@ public class ZkManager implements IZkOperation {
         }
     }
 
+    @Override
+    public void close(CuratorFramework client) throws Exception {
+        client.close();
+    }
+
 }
